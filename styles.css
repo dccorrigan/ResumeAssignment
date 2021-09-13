@@ -11,8 +11,20 @@ https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
 
 /* Global styles
 ----------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color: #22223B;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -22,6 +34,23 @@ a {
 }
 a:hover {
     text-decoration: none; 
+}
+h1 {
+    font-size: 75px;
+    line-height: 1;
+    text-shadow: 10px 10px 10px #22223B;
+}
+h2 {
+    font-size: 40px;
+}
+h1, h2 {
+    font-family:'Baloo Bhai 2', cursive;
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 
@@ -43,9 +72,23 @@ header {
     text-decoration: none; 
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
     background: rgba(74, 78, 105, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 2px dashed #22223B ;
+    padding: 20px 0;
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.project-item h3 {
+    margin-top: 0;
 }
 
 /* Work Experience
